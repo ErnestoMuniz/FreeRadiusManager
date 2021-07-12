@@ -14,4 +14,9 @@ Route::group([
     ),
     'namespace'  => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
+    Route::crud('radcheck', 'RadcheckCrudController');
+    Route::crud('nas', 'NasCrudController');
+    Route::crud('radreply', 'RadreplyCrudController');
+    Route::crud('radacct', 'RadacctCrudController');
+    Route::crud('radpostauth', 'RadpostauthCrudController');
 }); // this should be the absolute last line of this file
