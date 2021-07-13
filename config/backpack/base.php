@@ -42,11 +42,11 @@ return [
 
     // CSS files that are loaded in all pages, using Laravel's asset() helper
     'styles' => [
-        // 'packages/backpack/base/css/bundle.css',
+        'packages/backpack/base/css/bundle.css',
 
         // Here's what's inside the bundle:
-        'packages/@digitallyhappy/backstrap/css/style.min.css',
-        'packages/animate.css/animate.min.css',
+        // 'packages/@digitallyhappy/backstrap/css/style.min.css',
+        // 'packages/animate.css/animate.min.css',
         // 'packages/noty/noty.css',
 
         // Load the fonts separately (so that you can replace them at will):
@@ -231,15 +231,15 @@ return [
     // JS files that are loaded in all pages, using Laravel's asset() helper
     'scripts' => [
         // Backstrap includes jQuery, Bootstrap, CoreUI, PNotify, Popper
-        // 'packages/backpack/base/js/bundle.js',
+        'packages/backpack/base/js/bundle.js',
 
         // examples (everything inside the bundle, loaded from CDN)
-        'https://code.jquery.com/jquery-3.4.1.min.js',
-        'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
-        'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
-        'https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js',
-        'https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
-        'https://unpkg.com/sweetalert/dist/sweetalert.min.js',
+        // 'https://code.jquery.com/jquery-3.4.1.min.js',
+        // 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
+        // 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
+        // 'https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js',
+        // 'https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
+        // 'https://unpkg.com/sweetalert/dist/sweetalert.min.js',
         // 'https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js'
 
         // examples (VueJS or React)
