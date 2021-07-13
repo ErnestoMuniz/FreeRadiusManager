@@ -112,7 +112,8 @@ class RadcheckCrudController extends CrudController
               '!*' => '!*'
             ]
           ],[
-            'name' => 'value'
+              'name' => 'value',
+              'type' => 'secret'
           ]
         ]);
 
