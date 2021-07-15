@@ -17,7 +17,7 @@ class Nas extends Model
 
     protected $table = 'nas';
     // protected $primaryKey = 'id';
-    // public $timestamps = false;
+    public $timestamps = false;
     protected $guarded = ['id'];
     // protected $fillable = [];
     // protected $hidden = [];

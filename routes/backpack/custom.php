@@ -19,4 +19,6 @@ Route::group([
     Route::crud('radreply', 'RadreplyCrudController');
     Route::crud('radacct', 'RadacctCrudController');
     Route::crud('radpostauth', 'RadpostauthCrudController');
+    Route::get('charts/monthly-radacct', 'Charts\MonthlyRadacctChartController@response')->name('charts.monthly-radacct.index');
+    Route::get('charts/monthly-radpostauth', 'Charts\MonthlyRadpostauthChartController@response')->name('charts.monthly-radpostauth.index');
 }); // this should be the absolute last line of this file

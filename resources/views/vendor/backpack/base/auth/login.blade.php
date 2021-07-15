@@ -60,7 +60,12 @@
                                 </button>
                             </div>
                             @if (backpack_users_have_email() && config('backpack.base.setup_password_recovery_routes', true))
-                                <div class="text-right col-6 align-middle"><a href="{{ route('backpack.auth.password.reset') }}">Forgot Password?</a></div>
+                                <div class="text-right col-6 align-middle">
+                                  <a href="{{ route('backpack.auth.password.reset') }}">Forgot Password?</a>
+                                  @if (config('backpack.base.registration_open'))
+                                      <a href="{{ route('backpack.auth.register') }}">{{ trans('backpack::base.register') }}</a>
+                                  @endif
+                                </div>
                             @endif
                         </div>
                     </form>
@@ -184,9 +189,6 @@
                   </div>
                 </div>
             </div>
-            @if (config('backpack.base.registration_open'))
-                <div class="text-center"><a href="{{ route('backpack.auth.register') }}">{{ trans('backpack::base.register') }}</a></div>
-            @endif
         </div>
     </div>
 @endsection
